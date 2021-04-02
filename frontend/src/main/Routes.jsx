@@ -6,7 +6,7 @@ import ProdutoCRUD from '../components/produtos/ProdutoCRUD'
 
 export default props => 
     <Switch>
-        <Route exact path='/' component={Home}/>
-        <Route  path='/produtos' component={ProdutoCRUD}/>
-        <Redirect from='*' to='*'/>
+        <Route exact path='/' component={Home} />
+        <Route path='/produtos' component={ProdutoCRUD} />
+        <Redirect from='*' to='/' />
     </Switch>
